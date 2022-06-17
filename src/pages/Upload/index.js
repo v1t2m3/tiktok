@@ -1,5 +1,4 @@
-import Header from "../../components/Layout/DefaultLayout/Header";
-
+import React from "react";
 function Upload() {
   return <h2>Upload page</h2>;
 }
