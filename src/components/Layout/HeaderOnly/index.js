@@ -1,15 +1,13 @@
 import Header from "./Header";
-import SideBar from "./SideBar";
-function DefaultLayout({ children }) {
+function HeaderOnly({ children }) {
   return (
     <div>
       <Header />
       <div className="container">
-        <SideBar />
         <div className="content">{children}</div>
       </div>
     </div>
   );
 }
 
-export default DefaultLayout;
+export default HeaderOnly;
