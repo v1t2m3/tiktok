@@ -1,4 +1,6 @@
 import React from "react";
+import Tippy from "@tippyjs/react";
+import "tippy.js/dist/tippy.css";
 import classNames from "classnames/bind";
 import styles from "./Header.module.scss";
 import images from "../../../../assets/images";
@@ -24,9 +26,11 @@ function Header() {
           </button>
           <FontAwesomeIcon className={cx("loading")} icon={faSpinner} />
           <div></div>
-          <button className={cx("search-btn")}>
-            <FontAwesomeIcon icon={faMagnifyingGlass} />
-          </button>
+          <Tippy content="search">
+            <button className={cx("search-btn")}>
+              <FontAwesomeIcon icon={faMagnifyingGlass} />
+            </button>
+          </Tippy>
         </div>
         <div className={cx("action")}></div>
         <div></div>
