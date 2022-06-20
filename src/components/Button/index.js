@@ -9,6 +9,7 @@ function Button({
 	primary = false,
 	outline = false,
 	text = false,
+	rounded = false,
 	small = false,
 	large = false,
 	disable = false,
@@ -23,7 +24,11 @@ function Button({
 		...passProps
 	};
 	if (disable) {
-		delete props.onClick;
+		Object.keys(props).forEach((key) => {
+			if (key.startsWith('on') && typeof props[key] === 'function') {
+				delete props[key];
+			}
+		});
 	}
 	if (to) {
 		props.to = to;
@@ -32,7 +37,7 @@ function Button({
 		props.href = href;
 		Comp = 'a';
 	}
-	const classes = cx('wrapper', { primary, outline, text, small, large, disable });
+	const classes = cx('wrapper', { primary, outline, text, rounded, small, large, disable });
 
 	return (
 		<Comp className={classes} {...props}>

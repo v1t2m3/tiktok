@@ -57,12 +57,10 @@ function Header() {
 					</div>
 				</Tippy>
 				<div className={cx('action')}>
-					<Button text to="/upload">
-						Up load
+					<Button outline rounded to="/upload">
+						Download App
 					</Button>
-					<Button primary disable onClick={() => alert('Clicked')}>
-						Log in
-					</Button>
+					<Button primary>Log in</Button>
 				</div>
 				<div />
 			</div>
