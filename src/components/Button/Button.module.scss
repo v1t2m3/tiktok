@@ -21,8 +21,15 @@
   opacity: 0.5;
  }
 }
+
 //Button type
- .primary {
+.rounded {
+ padding: 0px 8px;
+ font-size: 1.4rem;
+ border-radius: 52px;
+ box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
+}
+.primary {
   background-color: var(--primary);
   color: var(--white);
   &:hover {
@@ -49,5 +56,6 @@
   border-color: rgba(0,0,0,0.1);
   &:hover {
    background-color: rgba(0,0,0,0.05);
+   border-color: rgba(0,0,0,0.15);
   }
  }
