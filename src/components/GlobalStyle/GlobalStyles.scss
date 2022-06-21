@@ -11,6 +11,8 @@
 --black: #555;
 --white: #fff;
 --text-color: #333;
+//font
+--font-family: 'ProximaNova', sans-serif;
 }
 *{
     margin: 0px;
@@ -22,8 +24,7 @@ html {
  font-size: 62.5%;
 }
 body {
- font-family: 'Montserrat Alternates', sans-serif;
- font-family: 'Roboto', sans-serif;
+ font-family: var(--font-family) ;
  font-size: 1.6rem;
  line-height: 1.5;
  text-rendering: optimizeSpeed;

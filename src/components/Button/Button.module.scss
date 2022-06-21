@@ -26,6 +26,11 @@
 .icon + .title, .title + .icon {
   margin-left: 10px;
 }
+.icon {
+  display: flex;
+  justify-content: center;
+  width: 20px;
+}
 
 //Button type
 .rounded {
