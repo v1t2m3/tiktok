@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import classNames from "classnames/bind";
-import Tippy from "@tippyjs/react";
+import Tippy from "@tippyjs/react/headless";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "tippy.js/dist/tippy.css";
@@ -8,15 +8,12 @@ import Button from "../../../Button";
 import styles from "./Header.module.scss";
 import images from "../../../../assets/images";
 import {
-  faBoltLightning,
   faCircleXmark,
   faEarthAsia,
   faEllipsisVertical,
   faKeyboard,
   faMagnifyingGlass,
-  faMobileButton,
   faQuestion,
-  faSignIn,
   faSpinner,
 } from "@fortawesome/free-solid-svg-icons";
 import { Wrapper as PopperWrapper } from "../../../Popper";
@@ -54,7 +51,7 @@ function Header() {
         </div>
         <Tippy
           interactive
-          visible={searchResult.length > 0}
+          visibles
           render={(attrs) => (
             <div className={cx("search-tippy")} tabIndex="-1" {...attrs}>
               <PopperWrapper>
