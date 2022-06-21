@@ -21,6 +21,11 @@
   opacity: 0.5;
  }
 }
+//Icon
+
+.icon + .title, .title + .icon {
+  margin-left: 10px;
+}
 
 //Button type
 .rounded {
