@@ -93,3 +93,12 @@
 .action {
     display: flex;
 }
+.menu-btn {
+    font-size: 2rem;
+    padding: 0px 20px;
+    background-color: transparent;
+    &:hover {
+        cursor: pointer;
+    }
+
+}

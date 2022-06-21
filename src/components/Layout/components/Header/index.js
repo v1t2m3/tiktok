@@ -10,14 +10,34 @@ import images from "../../../../assets/images";
 import {
   faBoltLightning,
   faCircleXmark,
+  faEarthAsia,
+  faEllipsisVertical,
+  faKeyboard,
   faMagnifyingGlass,
   faMobileButton,
+  faQuestion,
   faSignIn,
   faSpinner,
 } from "@fortawesome/free-solid-svg-icons";
 import { Wrapper as PopperWrapper } from "../../../Popper";
 import AccountItem from "./SearchAccountItem";
+import Menu from "../../../Popper/Menu";
 
+const MENU_ITEMS = [
+  {
+    icon: <FontAwesomeIcon icon={faEarthAsia} />,
+    title: "English",
+  },
+  {
+    icon: <FontAwesomeIcon icon={faQuestion} />,
+    title: "Feeback and Help",
+    to: "/feedback_page",
+  },
+  {
+    icon: <FontAwesomeIcon icon={faKeyboard} />,
+    title: "Keyboard Shorcut",
+  },
+];
 const cx = classNames.bind(styles);
 function Header() {
   const [searchResult, setSearchResult] = useState([]);
@@ -71,9 +91,11 @@ function Header() {
             Up load
           </Button>
           <Button primary>Log in</Button>
-          <Button
-            rightIcon={<FontAwesomeIcon icon={faBoltLightning} />}
-          ></Button>
+          <Menu items={MENU_ITEMS}>
+            <button className={cx("menu-btn")}>
+              <FontAwesomeIcon icon={faEllipsisVertical} />
+            </button>
+          </Menu>
         </div>
         <div />
       </div>
