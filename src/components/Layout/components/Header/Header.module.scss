@@ -93,6 +93,15 @@
 }
 .action {
     display: flex;
+    align-items: center;
+}
+.action-btn {
+    color:#161823 ;
+    background-color: transparent;
+    font-size: 2.2rem;
+    padding: 0px 10px;
+    cursor: pointer;
+    
 }
 .menu-btn {
     font-size: 2rem;
@@ -102,4 +111,12 @@
         cursor: pointer;
     }
 
+}
+.user-avatar {
+    width: 34px;
+    height: 34px;
+    margin-left: 12px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
 }
