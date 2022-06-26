@@ -1,5 +1,4 @@
 @import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500&display=swap');
 
 :root {
 
@@ -13,7 +12,28 @@
 --white: #fff;
 --text-color: #161823;
 //font
---font-family:  'Roboto Flex', sans-serif;
+--font-family:  'ProximaNovaRegular', sans-serif;
+}
+//font
+@font-face {
+    font-family: ProximaNovaBold;
+    src: url('/assets/font/Proxima-Nova-Bold.woff');
+}
+@font-face {
+    font-family: ProximaNovaRegular;
+    src: url('/assets/font/Proxima-Nova-Regular.woff2');
+}
+@font-face {
+    font-family: ProximaNovaSemiBold;
+    src: url('/assets/font/Proxima-Nova-Semibold.woff2');
+}
+@font-face {
+    font-family: SofiaproBold;
+    src: url('/assets/font/sofiapro-bold.woff');
+}
+@font-face {
+    font-family: SofiaproSemiBold;
+    src: url('/assets/font/sofiapro-semibold.otf');
 }
 *{
     margin: 0px;

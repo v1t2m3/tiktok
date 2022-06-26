@@ -38,7 +38,7 @@ const handleMenuChange = (menuItem) => {
 		default:
 	}
 };
-const currentUser = true;
+const currentUser = false;
 
 const MENU_ITEMS = [
 	{
@@ -156,11 +156,13 @@ function Header() {
 							</Tippy>
 						</div>
 					) : (
-						<div>
+						<div className={cx('action-user')}>
 							<Button text to="/upload">
 								Up load
 							</Button>
-							<Button primary>Log in</Button>
+							<Button primary to="/login">
+								Log in
+							</Button>
 						</div>
 					)}
 					<Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>

@@ -19,8 +19,6 @@
     width: var(--default-layout-width) ;
 }
 
-.logo {
-}
 .search, .search-tippy {
     width: 361px;
 }
@@ -102,6 +100,10 @@
     padding: 0px 10px;
     cursor: pointer;
     
+}
+.action-user {
+    display: flex;
+    align-items: center;
 }
 .menu-btn {
     font-size: 2rem;

@@ -1,0 +1,40 @@
+.form-login {
+ max-width: 500px;
+ margin-top: 40px;
+ display: flex;
+ flex-direction: column;
+ h1 {
+  text-align: center;
+ }
+}
+label {
+ display: block;
+}
+
+.custom-input {
+ padding: 10px 0px;
+ input {
+  width: 100%;
+  border-bottom: 1px solid var(--primary);
+  margin-top: 10px;
+ }
+}
+
+.custom-input-error label {
+ color: red;
+ font-size: 1.6rem;
+}
+
+.custom-input-error input {
+ border-bottom: 2px dotted red;
+ border-radius: 4px;
+}
+
+.error {
+ color: red;
+ margin: 0;
+}
+.submit-btn {
+ width: 100%;
+ margin-top: 30px;
+}

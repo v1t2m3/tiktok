@@ -1,0 +1,46 @@
+.content-item {
+ padding: 20px 0px;
+ display: flex;
+ border-bottom: 1px solid #eee;
+}
+.avatar-channel {
+ width: 56px;
+ height: 56px;
+ margin-right: 15px;
+ border-radius: 50%;
+ object-fit: cover;
+}
+.main-content {
+ display: flex;
+}
+.sub-content {
+ display: flex;
+}
+.action-video {
+ margin-left: 20px;
+ display: flex;
+ flex-direction: column;
+align-items: center;
+justify-content: end;
+text-align: center;
+}
+.video-item {
+ width: 336px;
+ height: 600px;
+ border-radius: 10px;
+}
+.action-icon {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 48px;
+ height: 48px;
+ border-radius: 50%;
+ font-size: 1.5rem;
+ background-color: #eee;
+ font-size: 2.3rem;
+ cursor: pointer;
+  p {
+   font-size: 0.5rem;
+  }
+}
