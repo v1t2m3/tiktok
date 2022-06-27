@@ -5,28 +5,3 @@ left: 600px;
 z-index: 1;
 margin-top: 30px;
 }
-.home::-webkit-scrollbar {
-	width: 10px;
-	background-color: #F5F5F5;
-}
-
-/**  STYLE 11 */
-.home::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background: rgba(255,255,255,0.1);
-  border: 1px solid #fff;
-}
-
-.home::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background: linear-gradient(left, #fff, #e4e4e4);
-  border: 1px solid #aaa;
-}
-
-.home::-webkit-scrollbar-thumb:hover {
-  background: #fff;
-}
-
-.home::-webkit-scrollbar-thumb:active {
-  background: linear-gradient(left, #22ADD4, #1E98BA);
-}
