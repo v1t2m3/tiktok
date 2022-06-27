@@ -1,8 +1,52 @@
 .wrapper{
+    position:fixed;
+    top: 60px;
     width: 356px;
+    margin: 15px;
     
 }
-.menu-item {
+.menu{
+    border-bottom: 1px solid var(--lightgray);
+    .menu-item {
     justify-content: start;
     margin-left: 0px;
+    &:hover {
+        cursor: pointer;
+        background-color: var(--lightgray);
+    }
+    &:nth-child(1) {
+        color: var(--primary);
+    }
+}}
+.suggested-accounts{
+    border-bottom: 1px solid var(--lightgray);
+    p {
+        font-size: 1.2rem;
+        margin: 10px 0px;
+    }
+    .seeall-btn {
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: var(--primary);
+        display: flex;
+        justify-content:start;
+    }
+}
+.discovery {
+    padding: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--lightgray);
+    .hashtag {
+        margin: 5px 3px;
+        padding: 5px;
+        border: 1px solid #ddd;
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: var(--black);
+        box-shadow: none;
+        &:hover {
+            background-color: var(--lightgray);
+        }
+    }
 }

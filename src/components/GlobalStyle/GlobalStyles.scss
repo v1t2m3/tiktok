@@ -10,6 +10,7 @@
 //color
 --black: #555;
 --white: #fff;
+--lightgray: #eee;
 --text-color: #161823;
 //font
 --font-family:  'ProximaNovaRegular', sans-serif;
@@ -45,6 +46,7 @@ html {
  font-size: 62.5%;
 }
 body {
+position: relative;
  font-family: var(--font-family) ;
  font-size: 1.6rem;
  line-height: 1.5;

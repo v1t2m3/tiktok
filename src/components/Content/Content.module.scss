@@ -1,8 +1,10 @@
 .content-item {
  padding: 20px 0px;
  display: flex;
- border-bottom: 1px solid #eee;
+ border-bottom: 1px solid var(--lightgray);
+
 }
+
 .avatar-channel {
  width: 56px;
  height: 56px;
