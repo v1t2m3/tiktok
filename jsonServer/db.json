@@ -1,0 +1,15 @@
+{
+    "suggested_acc": [
+      { "id": 1, "avatar":"E:/CodeGym/RJ/tiktok/src/assets/avatar/avatar1.jpeg","name": "thegioigiatri", "fullname": "Thế giới giải trí" },
+      { "id": 2, "avatar":"E:/CodeGym/RJ/tiktok/src/assets/avatar/avatar2.jpeg","name": "billiardemperor26", "fullname": "Anh chàng may mắn" },
+      { "id": 3, "avatar":"E:/CodeGym/RJ/tiktok/src/assets/avatar/avatar3.jpeg","name": "tiktomikiofficial", "fullname": "Mad and Tamara" },
+      { "id": 4, "avatar":"E:/CodeGym/RJ/tiktok/src/assets/avatar/avatar4.jpeg","name": "laymangrung", "fullname": "laymarung" },
+      { "id": 5, "avatar":"E:/CodeGym/RJ/tiktok/src/assets/avatar/avatar5.jpeg","name": "tiktokhoaqua", "fullname": "Hoa Quả Ngon" },
+      { "id": 6, "avatar":"E:/CodeGym/RJ/tiktok/src/assets/avatar/avatar6.jpeg","name": "boongcool", "fullname": "Bống Cool" }
+    ],
+    "comments": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" }
+  }
+  

@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Styles from "./SideBar.module.scss";
 import classNames from "classnames/bind";
 import Button from "../../../Button";
 import AccountItem from "../../components/Header/SearchAccountItem";
+import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHouse,
@@ -11,6 +12,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const cx = classNames.bind(Styles);
+
 function SideBar() {
   return (
     <aside className={cx("wrapper")}>
@@ -39,10 +41,21 @@ function SideBar() {
       </div>
       <div className={cx("suggested-accounts")}>
         <p>Suggested accounts</p>
-        <AccountItem />
-        <AccountItem />
-        <AccountItem />
-        <AccountItem />
+        <AccountItem
+          name="tamnv"
+          fullname="nguyenvantam"
+          avatar={require("E:/CodeGym/RJ/tiktok/src/assets/avatar/avatar1.jpeg")}
+        />
+        <AccountItem
+          name="hoahoctro"
+          fullname="Hoa học trò"
+          avatar={require("E:/CodeGym/RJ/tiktok/src/assets/avatar/avatar2.jpeg")}
+        />
+        <AccountItem
+          name="Mad_makita"
+          fullname="Mad and makita"
+          avatar={require("E:/CodeGym/RJ/tiktok/src/assets/avatar/avatar3.jpeg")}
+        />
         <Button to="/seeall" className={cx("seeall-btn")}>
           See all
         </Button>
