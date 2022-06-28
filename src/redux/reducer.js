@@ -3,7 +3,7 @@ const initState = {
 };
 const rootReducer = (state = initState, action) => {
 	switch (action.type) {
-		case 'loginTiktok':
+		case 'LOGIN':
 			return {
 				login: !state.login
 			};
