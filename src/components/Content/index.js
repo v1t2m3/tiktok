@@ -5,11 +5,11 @@ import Styles from './Content.module.scss';
 import Button from '../../components/Button';
 
 const cx = classNames.bind(Styles);
-function ContentItem() {
+function ContentItem(props) {
 	return (
 		<div className={cx('content-item')}>
 			<div>
-				<img className={cx('avatar-channel')} src={require('../../assets/avatar/avatar1.jpeg')} alt="channel" />
+				<img className={cx('avatar-channel')} src={props.avatar_channel} alt="channel" />
 			</div>
 			<div className={cx('detail-content')}>
 				<div className={cx('sub-content')}>
@@ -19,10 +19,7 @@ function ContentItem() {
 								amnhacgiaitri<span>Âm nhạc giải trí</span>
 							</h4>
 						</div>
-						<div className={cx('dicription-post')}>
-							Nhiều bạn yêu cầu nên mình ra Full nhé. #amnhacgiatri #nhachaymoingay #giaitri
-							#xuhuongtiktok #xuhuong @Âm Nhạc Giải Trí @Âm Nhạc Giải Trí @Âm Nhạc Giải Trí
-						</div>
+						<div className={cx('dicription-post')}>{props.status_post}</div>
 						<div className={cx('soundtrack')}>Nhạc nền - Âm Nhạc Giải Trí</div>
 					</div>
 					<div>
@@ -30,7 +27,7 @@ function ContentItem() {
 					</div>
 				</div>
 				<div className={cx('main-content')}>
-					<Video />
+					<Video src={props.src} />
 					<ActionVideo />
 				</div>
 			</div>
