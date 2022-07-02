@@ -2,9 +2,17 @@ import React from 'react';
 import ContentItem from '../../components/Content';
 import classNames from 'classnames/bind';
 import Styles from './Home.module.scss';
+import axios from 'axios';
 
 const cx = classNames.bind(Styles);
 function Home() {
+	// axios
+	// 	.get(`http://localhost:3004/suggested_acc`)
+	// 	.then((res) => {
+	// 		const persons = res.data;
+	// 		console.log(persons);
+	// 	})
+	// 	.catch((error) => console.log(error));
 	return (
 		<div className={cx('home')}>
 			<ContentItem

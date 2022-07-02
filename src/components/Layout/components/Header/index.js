@@ -3,6 +3,9 @@ import classNames from 'classnames/bind';
 import HeadlessTippy from '@tippyjs/react/headless';
 import Tippy from '@tippyjs/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useDispatch, useSelector } from 'react-redux';
+import { logInPage } from '../../../../redux/actions';
+import { loginSelector } from '../../../../redux/selector';
 
 import 'tippy.js/dist/tippy.css';
 import Button from '../../../Button';
@@ -38,7 +41,6 @@ const handleMenuChange = (menuItem) => {
 		default:
 	}
 };
-const currentUser = false;
 
 const MENU_ITEMS = [
 	{
@@ -92,7 +94,7 @@ const userMenu = [
 	{
 		icon: <FontAwesomeIcon icon={faSignOut} />,
 		title: 'Log out',
-		to: '/logout',
+		to: '/login',
 		separate: true
 	}
 ];
@@ -104,6 +106,9 @@ function Header() {
 			setSearchResult([]);
 		}, 3000);
 	}, []);
+	const dispatch = useDispatch();
+	const currentUser = useSelector(loginSelector);
+	console.log('currentUser:', currentUser);
 	return (
 		<header className={cx('wrapper')}>
 			<div className={cx('inner')}>
@@ -168,7 +173,7 @@ function Header() {
 								Up load
 							</Button>
 							<Button primary to="/login">
-								Log in
+								Login
 							</Button>
 						</div>
 					)}

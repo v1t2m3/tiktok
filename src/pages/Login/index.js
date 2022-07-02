@@ -1,13 +1,19 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import classNames from 'classnames/bind';
 import Styles from './Login.module.scss';
 import Button from '../../components/Button';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { logInPage } from '../../redux/actions';
+import { loginSelector } from '../../redux/selector';
 
 const cx = classNames.bind(Styles);
-export default function Login(props) {
+
+export default function Login() {
+	const navigate = useNavigate();
 	const dispatch = useDispatch();
+	const isLogin = useSelector(loginSelector);
+	console.log('islogin:', isLogin);
 	const MESSAGE_ERROR = {
 		email: 'Email error',
 		password: 'Password error'
@@ -33,6 +39,9 @@ export default function Login(props) {
 		if (isFilled && !isError) {
 			dispatch(logInPage(true));
 		}
+	}
+	if (isLogin) {
+		navigate('../', { replace: true });
 	}
 
 	return (

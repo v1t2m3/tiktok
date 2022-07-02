@@ -5,7 +5,7 @@ const rootReducer = (state = initState, action) => {
 	switch (action.type) {
 		case 'LOGIN':
 			return {
-				login: !state.login
+				login: action.payload
 			};
 		default:
 			return state;
