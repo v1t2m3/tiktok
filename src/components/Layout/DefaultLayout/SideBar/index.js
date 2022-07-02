@@ -10,7 +10,6 @@ import { faHouse, faUserGroup, faVideo } from '@fortawesome/free-solid-svg-icons
 const cx = classNames.bind(Styles);
 
 function SideBar() {
-	const suggestedList = {};
 	const [ accountInfo, setAccountInfo ] = useState({});
 	useEffect(() => {
 		axios
@@ -20,7 +19,7 @@ function SideBar() {
 			})
 			.catch((error) => console.log(error));
 	}, []);
-	console.log(accountInfo);
+	console.log(accountInfo[1]);
 	return (
 		<aside className={cx('wrapper')}>
 			<div className={cx('menu')}>
@@ -35,15 +34,8 @@ function SideBar() {
 				</Button>
 			</div>
 			<div className={cx('suggested-accounts')}>
-				<p>
-					Suggested accounts
-					{accountInfo.map((acc) => {
-						acc.name;
-					})}
-				</p>
-				{/* {accountInfo.map((accInfor) => (
-					<AccountItem name={accInfor.name} fullname={accInfor.fullname} avatar={accInfor.avatar} />
-				))} */}
+				<p>Suggested accounts</p>
+				<AccountItem info={accountInfo[0]} />
 				<Button to="/seeall" className={cx('seeall-btn')}>
 					See all
 				</Button>
